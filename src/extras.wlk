@@ -1,14 +1,18 @@
+import comidas.*
 import pepita.*
 import wollok.game.*
 
 object nido {
+	method image() = "nido.png"
 
-	// Completar
+	method position() = game.at(game.width() - 1, game.height() - 1)
 }
 
 object silvestre {
+	var property position = game.origin()
 
-	// Completar
+	method image() = "silvestre.png"
 
+	method siguiente() = manzana
 }
 
